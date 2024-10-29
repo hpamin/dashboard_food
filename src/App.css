@@ -1,0 +1,75 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: OpenSans;
+  src: url('./font/static/OpenSans-Regular.ttf');
+}
+*{
+  font-family: OpenSans;
+}
+
+
+
+/* برای مرورگرهای مدرن */
+::-webkit-scrollbar {
+  width: 8px; /* عرض نوار اسکرول */
+}
+
+::-webkit-scrollbar-track {
+  background-color: #FFFFFF; /* رنگ پس‌زمینه نوار اسکرول */
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #F9F9F9; /* رنگ بخش قابل اسکرول */
+  border-radius: 10px; /* لبه‌های گرد برای نوار اسکرول */
+  border: 2px solid #FFFFFF; /* حاشیه سفید برای جداسازی */
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: #E0E0E0; /* تغییر رنگ هنگام هاور */
+}
+
+/* استایل برای فایرفاکس */
+* {
+  scrollbar-width: thin; /* باریک بودن نوار اسکرول */
+  scrollbar-color: #FFFFFF #F9F9F9; /* رنگ نوار اسکرول و پس‌زمینه */
+}
+
+
+
+
+
+input[type="file"] {
+  background-color: #fff;
+  transition: border-color .25s ease-in-out;
+}
+
+input[type="file"]::file-selector-button{
+  height: 50px;
+  padding: 0.7em 1.5em;
+  font-size: 0.9rem;
+  border-width: 0;
+  border-top-right-radius: 3px;
+  border-bottom-right-radius: 3px;
+  background-color: rgb(223 223 223);
+  transition: all .25s ease-in-out;
+  cursor: pointer;
+  margin-right: 1em;
+}
+input[type="file"]:hover {
+  border-color: #888;
+}
+input[type="file"]::file-selector-button{
+  background-color: rgb(223 223 223);
+}
+.fileIcon svg{
+  height: 50px;
+  width: 30px;
+  padding: 0 5px;
+  border-top-left-radius: 3px;
+  border-bottom-left-radius: 3px;
+  background-color: rgb(223 223 223);
+}
+
