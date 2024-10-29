@@ -69,20 +69,7 @@ const Products = () => {
 
         <div className='w-fit h-[78vh] py-2 flex flex-wrap gap-3 items-start justify-between overflow-auto'>
           {filterProduct?.map((item) => (
-            <>
             <PostCard item={item} handelShowModal={handelShowModal} key={item.id} />
-            <PostCard item={item} handelShowModal={handelShowModal} key={item.id} />
-            <PostCard item={item} handelShowModal={handelShowModal} key={item.id} />
-            <PostCard item={item} handelShowModal={handelShowModal} key={item.id} />
-            <PostCard item={item} handelShowModal={handelShowModal} key={item.id} />
-            <PostCard item={item} handelShowModal={handelShowModal} key={item.id} />
-            <PostCard item={item} handelShowModal={handelShowModal} key={item.id} />
-            <PostCard item={item} handelShowModal={handelShowModal} key={item.id} />
-            <PostCard item={item} handelShowModal={handelShowModal} key={item.id} />
-            <PostCard item={item} handelShowModal={handelShowModal} key={item.id} />
-            <PostCard item={item} handelShowModal={handelShowModal} key={item.id} />
-            <PostCard item={item} handelShowModal={handelShowModal} key={item.id} />
-            </>
           ))}
 
           {/* <ProductModal /> */}
