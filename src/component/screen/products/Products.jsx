@@ -44,7 +44,7 @@ const Products = () => {
     <div className='w-full min-h-[100vh] bg-bg_primary py-5 px-7 flex flex-col gap-6 relative overflow-hidden'>
 
       {loading &&
-        <div className='w-full h-full absolute top-0 right-0 z-10' style={{backgroundColor: 'rgba(0,0,0,0.4)'}}>
+        <div className='w-full h-full absolute top-0 right-0 z-50' style={{backgroundColor: 'rgba(0,0,0,0.4)'}}>
           <div className='w-full h-full flex items-center justify-center'>
             <img src={loadingImg} alt="loading" className='mix-blend-multiply' />
           </div>
