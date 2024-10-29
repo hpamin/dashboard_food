@@ -19,8 +19,6 @@ function CreateProduct() {
   // redux
   const dispatch = useDispatch();
 
-console.log(activeCategory);
-
     const ingredientsOptions = useMemo(() => [
       { value: 'wheat_bun', label: 'Wheat bun' },
       { value: 'veggie_patty', label: 'Veggie Patty' },
@@ -155,17 +153,17 @@ const handlePhotoChange = (event) => {
             <div >
                 <label className='font-bold text-sm'> Upload photo </label>
 
-                <div className='flex items-center flex-col'>
+                <div className='flex items-start gap-2 flex-col'>
                   <div className='flex'>
                     <label className='fileIcon' htmlFor='photo'><MdOutlineFileUpload />  </label>
                       <input type="file" name="photo" id='photo' onChange={handlePhotoChange} />
                   </div>
 
-                  {/* {photoPreview && 
+                  {photoPreview && 
                     <div className='w-20'>
                       <img src={photoPreview} alt="Preview" className="w-20 h-20 rounded-md" />
                     </div>
-                  } */}
+                  }
               </div>
             </div>
 
