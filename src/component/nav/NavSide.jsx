@@ -43,11 +43,7 @@ const NavSide = () => {
       icon: <MdDeliveryDining size={20}/>,
     },
   ]
-  
-  const handelMMd = (item, location) => {
-    console.log("location :", location);
-    console.log("item :", item);
-  }
+
   return (
     <nav className='w-72 h-[100vh] py-5 flex flex-col gap-10 justify-between pr-0'>
 
@@ -57,7 +53,7 @@ const NavSide = () => {
 
           {links.map((item) => (
             
-            <Link to={item.to}  className='w-full flex items-center gap-3 h-12 hover:opacity-70 relative' key={item.id} onClick={() => handelMMd(item.to, location.pathname)}> 
+            <Link to={item.to}  className='w-full flex items-center gap-3 h-12 hover:opacity-70 relative' key={item.id}> 
             
               {item.icon} {item.title}
             {
