@@ -111,12 +111,32 @@ function EditProduct() {
           <div className='w-full flex gap-5'>
             <div className='flex-1'>
               <label className='font-bold text-sm'> Weight in grams </label>
-              <input type="number" name='weight' className='w-full p-2 border outline-none rounded-md border-border-color hover:border-black-color' onChange={formik.handleChange} value={formik.values.weight} />
+              <input 
+                type="number" 
+                name='weight' 
+                className='w-full p-2 border outline-none rounded-md border-border-color hover:border-black-color' 
+                onChange={formik.handleChange} 
+                value={formik.values.weight} 
+                min="1" max="999"
+                onInput={(e) => {
+                  if (e.target.value < 1) e.target.value = 1;
+                  if (e.target.value > 999) e.target.value = 999;
+                }}/>
             </div>
 
             <div className='flex-1'>
               <label className='font-bold text-sm'> Calories </label>
-              <input type="number" name="calories" className='w-full p-2 border outline-none rounded-md border-border-color hover:border-black-color' onChange={formik.handleChange} value={formik.values.calories} />
+              <input 
+                type="number" 
+                name="calories" 
+                className='w-full p-2 border outline-none rounded-md border-border-color hover:border-black-color' 
+                onChange={formik.handleChange} 
+                value={formik.values.calories}  
+                min="1" max="999"
+                onInput={(e) => {
+                  if (e.target.value < 1) e.target.value = 1;
+                  if (e.target.value > 999) e.target.value = 999;
+                }}/>
             </div>
           </div>
 
@@ -124,7 +144,17 @@ function EditProduct() {
             <label className='font-bold text-sm'> Price of the product </label>
             <div className='flex items-center px-2 border rounded-md border-border-color hover:border-black-color'>
               <label htmlFor="price"><FiDollarSign /></label>
-              <input type="number" name="price" id='price' className='w-full p-2 outline-none ' onChange={formik.handleChange} value={formik.values.price} />
+              <input 
+                type="number" 
+                name="price" 
+                id='price' 
+                className='w-full p-2 outline-none' 
+                onChange={formik.handleChange} 
+                value={formik.values.price}
+                onInput={(e) => {
+                  if (e.target.value < 1) e.target.value = 1;
+                  if (e.target.value > 999) e.target.value = 999;
+                }}/>
             </div>
           </div>
 

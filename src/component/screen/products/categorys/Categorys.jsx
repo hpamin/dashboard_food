@@ -1,4 +1,4 @@
-import React, { useContext, useEffect, useState } from 'react'
+import React, { useContext, useState } from 'react'
 import { TbSoupFilled } from 'react-icons/tb'
 import { RiDrinksFill } from 'react-icons/ri'
 import { LuIceCream2 } from 'react-icons/lu'
@@ -32,7 +32,7 @@ const Categorys = () => {
   ]
 
   // context
-  const { activeCategory, setActiveCategory } = useContext(UserContext)
+  const { setActiveCategory } = useContext(UserContext)
 
   // black nav in buttons  
   const [activeButton, setActiveButton] = useState(0);

@@ -1,6 +1,5 @@
 import React from 'react'
 import { Link, useLocation } from 'react-router-dom'
-import { CiShoppingCart } from "react-icons/ci";
 import { RiDashboardHorizontalFill, RiShoppingBag2Fill } from 'react-icons/ri';
 import { MdDeliveryDining } from 'react-icons/md';
 import { FaHamburger } from 'react-icons/fa';

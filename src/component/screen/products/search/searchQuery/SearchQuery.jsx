@@ -9,7 +9,7 @@ const SearchQuery = ({item}) => {
     <div className='w-full h-20 flex items-start justify-between cursor-pointer duration-200 ' onClick={() => handelShowModal(item)}>
       {item.photo !== "null" ? 
           <div className='w-16 h-full flex items-center justify-center'>
-            <img src={item.photo} alt="product image" className='mix-blend-multiply w-full h-full object-contain' />
+            <img src={item.photo} alt={item.name} className='mix-blend-multiply w-full h-full object-contain' />
           </div>
           :
           <div className='w-16 h-full flex items-center justify-center'>
